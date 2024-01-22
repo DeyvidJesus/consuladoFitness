@@ -1,0 +1,85 @@
+.area_contato {
+    height: auto;
+    width: auto;
+    margin: 5rem 1rem;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin: 2rem auto;
+}
+
+
+form .caixa_mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 10px 0;
+}
+
+form .caixa_mensagem label {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+form .caixa_mensagem input {
+    width: auto;
+    border-radius: 4px;
+    height: 3vh;
+}
+
+textarea {
+    width: auto;
+    border-radius: 4px;
+}
+
+.enviar {
+    width: 90vw;
+    border-radius: 4px;
+    height: 3vh;
+    font-size: 20px;
+}
+
+.caixa_mensagem input {
+    color: black;
+}
+
+.enviar {
+    background-color: var(--color-orange);
+    height: 5vh;
+}
+
+.img_desktop {
+    display: none;
+}
+
+@media screen and (min-width:1000px) {
+    .area_contato {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    form .caixa_mensagem{
+        width: 45vw;
+    }
+
+    .enviar {
+        width: 45vw;
+    }
+
+    .img_desktop {
+        display: block;
+        width: 50vw;
+        height: 92vh;
+        object-fit: cover;
+    }
+}

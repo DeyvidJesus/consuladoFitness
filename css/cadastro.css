@@ -1,0 +1,122 @@
+form {
+    height: auto;
+    width: auto;
+    margin: 2rem 1.5rem;
+}
+
+.area_cadastro form a {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.info_pessoal {
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+.info_pessoal .input {
+    color: var(--color-fundoblack);
+    font-size: 20px;
+    /* width: inherit;
+    padding: 10px;
+    height: 40px; */
+    flex-grow: 1;
+    flex-basis: 200;
+    padding: 0 10px;
+}
+
+.botao_cadastro {
+    background-color: var(--color-orange);
+    width: -webkit-fill-available;
+    height: 7vh;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao_cadastro:hover {
+	filter: brightness(.9);        
+}
+
+input, select {
+    height: 7vh;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #000 !important;
+}
+ .date {
+    color: black;
+ }
+
+.img_cadastro {
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+    form {
+        margin: 2rem 4rem;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    form {
+        margin: 2rem 6rem;
+    }
+
+    /* .escolha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .escolha span input {
+        width: 34vw;
+    }
+
+    select {
+        width: 34vw;
+    } */
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .area_cadastro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form {
+        width: 50vw;
+        margin: 2rem;
+    }
+
+    /* select{
+        width: 15vw;
+    }
+
+    .escolha span input {
+        width: 15vw;
+    }*/
+
+    .img_cadastro {
+        display: block;
+        height: 100vh;
+        width: 60vw;
+    }
+}

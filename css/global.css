@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=League+Spartan:wght@600;700;800&family=Poppins:wght@400;500&display=swap');
+/* font-family: 'Lato', sans-serif;
+font-family: 'League Spartan', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    /* tons de cores de fundo do site  */
+    --color-fundoblack: #000; /*para o fundo do header/rodapé*/ 
+    --color-cinza1: #333; /*fundo do site*/
+    --color-cinza2: #D9D9D9;
+    --color-fundocinza2: #666;
+    --color-fontecinza3: #999;
+    --color-fundocinza4: #EFEFEF;
+    --color-fontwhite: #fff;
+    
+    --color-orange: #FF8833; /*cor do botão*/
+}
+
+body {
+    background-color: var(--color-cinza1);
+}
+
+h1, h2, h3 {
+    color: var(--color-fontwhite);
+    font-family: 'League Spartan', sans-serif;
+}
+
+p, ul, input, label, button, a {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-fontwhite);
+}
+
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-fundoblack);
+    padding: 1rem 1rem;
+    font-family: 'League Spartan', sans-serif !important;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+}
+
+.nav_desktop {
+    display: flex;
+    align-items: center;
+}
+
+.nav_desktop ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav {
+    margin: 0 15px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.icon_menu {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navegacao {
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .icon_menu {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .icon_menu button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: var(--color-fundoblack);
+    }
+
+    .mobile .nav {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .icon_botao {
+        width: 30px;
+    }
+}
